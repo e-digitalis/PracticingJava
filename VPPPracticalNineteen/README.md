@@ -1,0 +1,3 @@
+# PracticingJava
+
+Testing code, making a library case, methods, constructors, getters, setters...
