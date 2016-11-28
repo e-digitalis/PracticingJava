@@ -1,6 +1,6 @@
 package animals;
 
-public class AnimalMain {
+public class AnimalMain { // throws IllegalMonitorStateException {
 
 	public static void main(String[] args) {
 
@@ -21,7 +21,15 @@ public class AnimalMain {
 		System.out.print("makeSound: "); myTameCat.makeSound();
 		System.out.println("to string " + myTameCat.toString());
 		System.out.println("hash code " + myTameCat.hashCode());
-//		myTameCat.notifyAll(); //this gives an exception and a stack trace
+		
+		try{
+		myTameCat.notifyAll(); //this gives an exception and a stack trace
+		} catch (IllegalMonitorStateException e) {
+			System.out.println("Uhoh. Something went wrong. Nothing can be notified.");
+		} catch(Exception e){
+			  //This catch block catches all the exceptions
+			System.out.println("In case the above exception doesn't work, this is to let you know that an exception has occurred.");
+		}
 		System.out.println(myTameCat);
 		System.out.println(myTameCat.typeOfAnimal);
 		
