@@ -21,9 +21,10 @@ public class AnimalMain {
 		System.out.print("makeSound: "); myTameCat.makeSound();
 		System.out.println("to string " + myTameCat.toString());
 		System.out.println("hash code " + myTameCat.hashCode());
-//		myTameCat.notifyAll();
+//		myTameCat.notifyAll(); //this gives an exception and a stack trace
 		System.out.println(myTameCat);
 		System.out.println(myTameCat.typeOfAnimal);
+		
 				
 	}
 
