@@ -1,6 +1,6 @@
 package animals;
 
-public class AnimalMain { // throws IllegalMonitorStateException {
+public class AnimalMain {
 
 	public static void main(String[] args) {
 
@@ -30,10 +30,9 @@ public class AnimalMain { // throws IllegalMonitorStateException {
 			  //This catch block catches all the exceptions
 			System.out.println("In case the above exception doesn't work, this is to let you know that an exception has occurred.");
 		}
-		System.out.println(myTameCat);
-		System.out.println(myTameCat.typeOfAnimal);
 		
-				
+		System.out.println(myTameCat);
+		System.out.println(myTameCat.typeOfAnimal);				
 	}
 
 }
