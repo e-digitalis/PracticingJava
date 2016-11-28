@@ -3,23 +3,20 @@ package animals;
 import java.util.Scanner;
 
 public abstract class Animals { // class is abstract, no objects of type animal
-								// can be created
+	// can be created
 	// the class exists to extend to subclasses, i.e. so subclasses can inherit
 	// from it
 
-	public static Scanner myScan = new Scanner(System.in); // creating a scanner
-															// for user input,
-															// making it public
-															// and static so
-															// available to all
+	public static Scanner myScan = new Scanner(System.in);
+	// creating a scanner for user input, making it public and static so available to all
 
-	static String typeOfAnimal; // declaring type of animal, it is initialized
-								// in each class
+	static String typeOfAnimal;
+	// declaring type of animal, it is initialized in each class
 	String name; // declaring name, initialized with user input
 
 	public Animals() { // constructor of animal class
 		System.out.println(); // all this will happen when objects are created
-								// in sub classes
+		// in sub classes
 		System.out.print("An animal has been created using the constructor in the abstract Animal class.");
 		System.out.println(" What is the name of the animal?");
 		name = Animals.myScan.nextLine();

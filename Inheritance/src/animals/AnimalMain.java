@@ -13,6 +13,18 @@ public class AnimalMain {
 		myWildCat.makeSound();					//overriding the makeSound method by having the "exact same" method in each class
 
 		Animals.myScan.close();					//closing the scanner to avoid resource leaks
+		
+		System.out.println("\ntesting testing");
+		
+		System.out.println(myTameCat.getClass());
+		System.out.println(myTameCat.equals(myWildCat));
+		System.out.print("makeSound: "); myTameCat.makeSound();
+		System.out.println("to string " + myTameCat.toString());
+		System.out.println("hash code " + myTameCat.hashCode());
+//		myTameCat.notifyAll();
+		System.out.println(myTameCat);
+		System.out.println(myTameCat.typeOfAnimal);
+				
 	}
 
 }
