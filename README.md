@@ -4,8 +4,8 @@ Practicing basic and fundamental java knowledge (such as dates (LocalDateTime) a
 
 ##Topics covered
 
-LocalDateTime
-for loops
-inheritance
-exceptions
-collections
+1. LocalDateTime
+2. for loops
+3. inheritance
+4. exceptions
+5. collections
