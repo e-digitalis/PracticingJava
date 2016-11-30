@@ -1,0 +1,52 @@
+package libraryStuff;
+
+import java.util.HashMap;
+
+public class UI {
+
+	public void printHeader() {
+
+		System.out.println("BookID  Title                 Author                ISBN");
+
+	}
+
+	public void printBook(Book book) {
+
+		// not necessary once we created the method overload String bookIDString
+		// = String.valueOf(book.getBookID());
+
+		System.out.println(fixLengthString(book.getID(), 6) + "  " + fixLengthString(book.getTitle(), 20) + "  "
+				+ fixLengthString(book.getAuthor(), 20) + "  " + book.getIsbn());
+	}
+
+	private String fixLengthString(String start, int length) {
+
+		// TODO: fix string padding problem
+
+		if (start.length() >= length) {
+			return start.substring(0, length);
+		} else {
+			while (start.length() < length) {
+				start += " ";
+			}
+			return start;
+		}
+
+	}
+
+	private String fixLengthString(int start, int length) {
+		String startString = String.valueOf(start);
+		return fixLengthString(startString, length);
+
+		// Method overloading
+
+	}
+
+	public void printBookCatalog(HashMap<Integer, Book> bookCatalog) {
+		for(Book thisBook : bookCatalog.values()){
+			printBook(thisBook);
+		}
+
+	}
+
+}
