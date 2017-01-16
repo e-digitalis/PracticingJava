@@ -12,11 +12,14 @@ public class Main {
 		BookCatalog bookCatalog = new BookCatalog();
 
 		// creating new book objects
-		Book book1 = new Book("introduction to Java", "MG", "123456", "Anytown", 400);
-		Book book2 = new Book("better Java", "Maria Liszlo", "234567", "Anytown", 150);
+		Book book1 = new Book("trew12","introduction to Java", "MG", "123456", "Anytown", 400);
+		Book book2 = new Book("hi45", "better Java", "Maria Liszlo", "234567", "Anytown", 150);
+		Book book3 = new Book("jhökjh2345", "introduction to advanced Java", "MG", "173456", "Anytown", 320);
+		Book book4 = new Book("2345jkj", "even better Java", "Maria Liszlo", "284567", "Anytown", 950);
+		Book book5 = new Book("135hg", "more Java", "Maria Liszlo", "284567", "Anytown", 950);
 
 		// Creating new DVD objects
-		DVD dvd1 = new DVD("Epic Java reel!", "Some branch", "Alma Dirr", 456798, 120);
+		DVD dvd1 = new DVD("asgw34", "Epic Java reel!", "Some branch", "Alma Dirr", 456798, 120);
 		Customer customer = new Customer("Dr.", "Lissssie", "La", "Hejvägen", "0812345678", "liss@great.com", 1,
 				GenderType.OTHER);
 
@@ -42,6 +45,10 @@ public class Main {
 
 		bookCatalog.addBook(book1);
 		bookCatalog.addBook(book2);
+		bookCatalog.addBook(book3);
+		bookCatalog.addBook(book4);
+		bookCatalog.addBook(book5);
+		
 
 		UI ui = new UI();
 		ui.printHeader();

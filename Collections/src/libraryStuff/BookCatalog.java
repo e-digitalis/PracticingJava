@@ -1,20 +1,22 @@
 package libraryStuff;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.TreeMap;
 
 public class BookCatalog {
 
-	private HashMap<String, Book> bookMap;
+	private TreeMap<String, Book> bookMap;
 	// changing the old Array to a HashMap
 	// private Book[] bookArray = new Book[100];
 	
 	public BookCatalog(){
 		//constructor for the BookCatalog. Instantiates the declared HasMap.
-		bookMap = new HashMap<String, Book>();
+		bookMap = new TreeMap<String, Book>();
 	}
 	
 
-	public HashMap<String, Book> getBookMap() {
+	public TreeMap<String, Book> getBookMap() {
 		return bookMap;
 	}
 

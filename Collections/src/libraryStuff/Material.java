@@ -9,9 +9,9 @@ public abstract class Material {
 	private Customer borrower;
 	boolean isIn;
 	
-	public Material(String title, String branch) {
-		idCounter++;
-		this.id = idCounter.toString(); //doing toString on the counter means it's acceptable for the new data type
+	public Material(String id, String title, String branch) {
+//		idCounter++;
+		this.id = id; //doing toString on the counter means it's acceptable for the new data type (Matt changed id from int to String)
 		this.title = title;
 		this.branch = branch;
 		boolean isIn = true;
@@ -21,7 +21,7 @@ public abstract class Material {
 		return title;
 	}
 
-	public int getID(){
+	public String getID(){
 		return id;
 	}
 	

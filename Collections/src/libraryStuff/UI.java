@@ -1,6 +1,7 @@
 package libraryStuff;
 
 import java.util.HashMap;
+import java.util.TreeMap;
 
 public class UI {
 
@@ -42,7 +43,7 @@ public class UI {
 
 	}
 
-	public void printBookCatalog(HashMap<Integer, Book> bookCatalog) {
+	public void printBookCatalog(TreeMap<String, Book> bookCatalog) {
 		for(Book thisBook : bookCatalog.values()){
 			printBook(thisBook);
 		}

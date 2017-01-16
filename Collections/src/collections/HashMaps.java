@@ -10,11 +10,11 @@ public class HashMaps {
 	public static void main(String[] args) {
 
 		HashMap<String, Book> aHashMap = new HashMap<String, Book>();
-		Book book1 = new Book("a book", "M Blank", "123789", "SomePlace", 456);
-		Book book2 = new Book("another book", "P Blank", "123756", "SomePlace", 123);
-		Book book3 = new Book("great book", "Xiaoyi Blank", "123756", "SomePlace", 789);
-		Book book4 = new Book("wonderful book", "Amanda Blank", "123756", "SomePlace", 654);
-		Book book5 = new Book("fantastic book", "Alma Blank", "123756", "SomePlace", 321);
+		Book book1 = new Book("45qsdfg", "a book", "M Blank", "123789", "SomePlace", 456);
+		Book book2 = new Book("45qsdfg", "another book", "P Blank", "123756", "SomePlace", 123);
+		Book book3 = new Book("45qsdfg", "great book", "Xiaoyi Blank", "123756", "SomePlace", 789);
+		Book book4 = new Book("45qsdfg", "wonderful book", "Amanda Blank", "123756", "SomePlace", 654);
+		Book book5 = new Book("45qsdfg", "fantastic book", "Alma Blank", "123756", "SomePlace", 321);
 
 		aHashMap.put(book1.getTitle(), book1);
 		aHashMap.put(book2.getTitle(), book2);

@@ -8,8 +8,8 @@ public class DVD extends Material {
 	private boolean licensed;
 	private final String materialType = "DVD";
 
-	public DVD(String title, String branch, String director, int catalogNo, int runningTime) {
-		super(title, branch);
+	public DVD(String id, String title, String branch, String director, int catalogNo, int runningTime) {
+		super(id, title, branch);
 		this.director = director;
 		this.catalogNo = catalogNo;
 		this.runningTime = runningTime;

@@ -10,12 +10,11 @@ public class Book extends Material {
 	private int noOfPages;
 	private final String materialType = "Book";
 
-	public Book(String title, String author, String isbn, String branch, int noOfPages) {
-		super(title, branch);
+	public Book(String id, String title, String author, String isbn, String branch, int noOfPages) {
+		super(id, title, branch);
 		this.author = author;
 		this.isbn = isbn;
 		this.noOfPages = noOfPages;
-
 	}
 
 	public String getAuthor() {
